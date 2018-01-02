@@ -1,0 +1,381 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,600,800');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700');
+@import url('https://fonts.googleapis.com/css?family=Nothing+You+Could+Do');
+@import url('https://fonts.googleapis.com/css?family=BenchNine:300, 400,700');
+body, .container-fluid {
+	padding: 0;
+	margin: 0;
+}
+/* ------- NAVIGATION BAR START ------- */
+#navigation {
+	background: #171B1E;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 15px;
+	margin: 0;
+	border-top: 1px solid #FFF;
+	z-index: 9999;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+}
+#navigation img {
+	width: 20px;
+	height: 20px;
+	margin-right: 20px;
+}
+#facebook:hover {
+	content: url(../img/icons/facebook-original.png);
+}
+#instagram:hover {
+	content: url(../img/icons/instagram-original.png);
+}
+#linkedin:hover {
+	content: url(../img/icons/linkedin-original.png);
+}
+.line {
+	width: 20px;
+	height: 2px;
+	background: #FFF;
+	color: #FFF;
+	margin: 3px auto;
+	transition: 0.3s;
+}
+#menu {
+	float: right;
+}
+.top-slant {
+	-ms-transform: matrix(1, 1, 0, 1, 0, 0); /* IE 9 */
+	-webkit-transform: matrix(1, 1, 0, 1, 0, 0); /* Safari */
+	transform: matrix(1, 1, 0, 1, 0, 5);
+	width: 15px;
+}
+.bottom-slant {
+	-ms-transform: matrix(1, -1, 0, 1, 0, 0); /* IE 9 */
+	-webkit-transform: matrix(1, -1, 0, 1, 0, 0); /* Safari */
+	transform: matrix(1, -1, 0, 1, 0, 0);
+	width: 15px;
+}
+ @keyframes fadeIn {
+ from {
+opacity: 0;
+}
+ to {
+opacity:1;
+}
+}
+/* ------- NAVIGATION BAR END ------- */
+
+
+/* ------- HEADER START ------- */
+#home .container-fluid:nth-child(2) {
+	position: absolute;
+	padding: 0;
+	margin: 0;
+	background: #000;
+	z-index: -9999;
+	height: 100%;
+	width: 100%;
+}
+#home h1 {
+	font-family: 'Nothing You Could Do', cursive;
+	color: #FFF;
+	font-size: 200px;
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+#home iframe {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	pointer-events: none;
+}
+@media (min-aspect-ratio: 16/9) {
+  #home .container-fluid:nth-child(2) { height: 300%; top: -100%; }
+}
+@media (max-aspect-ratio: 16/9) {
+  #home .container-fluid:nth-child(2) { width: 300%; left: -100%; }
+}
+#cv .container-fluid:nth-child(2) {
+	background: url(../img/hero/about.jpg) no-repeat top left;
+	background-color: #23282D;
+	background-size: cover;
+	text-align: center;
+	padding: 150px 0;
+	color: #FFF;
+	text-transform: uppercase;
+	z-index: 0;
+}
+#about .container-fluid:nth-child(2) {
+	background: url(../img/hero/eyes.jpg) no-repeat top right;
+	background-color: #23282D;
+	background-size: cover;
+	text-align: center;
+	padding: 150px 0;
+	color: #FFF;
+	text-transform: uppercase;
+	z-index: 0;
+}
+#projects .container-fluid:nth-child(2) {
+	background: url(../img/hero/projects.jpg) no-repeat top right;
+	background-color: #000;
+	background-size: cover;
+	text-align: center;
+	padding: 150px 0;
+	color: #FFF;
+	text-transform: uppercase;
+	z-index: 0;
+}
+#cv h1, #about h1, #projects h1 {
+	font-family: 'BenchNine', sans-serif;
+	font-weight: 300;
+	font-size: 32px;
+	margin: 0;
+	padding: 0;
+}
+#cv h2, #about h2, #projects h2 {
+	font-family: 'Raleway', sans-serif;
+	font-weight: 800;
+	font-size: 48px;
+	margin: 0;
+	padding: 0;
+	text-transform: uppercase;
+}
+/* ------- HEADER END ------- */
+
+
+/* ------- BODY START ------- */
+#cv .container-fluid:nth-child(3) .container {
+	padding: 50px 200px;
+	font-family: 'Raleway', sans-serif;
+	font-size: 13px;
+}
+#cv .container-fluid:nth-child(3) .container > .col-sm-12, #about .container-fluid:nth-child(3) .container > .col-sm-12 {
+	text-align: center;
+}
+#cv button, #about button {
+	border: 0;
+	background: transparent;
+	margin-right: 20px;
+	border-bottom: 1px solid #FFF;
+	transition: 0.5s;
+	color: #9E9E9E;
+	font-family: 'BenchNine', sans-serif;
+	font-size: 18px;
+	font-weight: 400;
+	text-transform: uppercase;
+	padding: 0;
+}
+#cv button:focus, #about button:focus {
+	outline: none;
+}
+#cv .active, #cv button:hover, #about .active, #about button:hover {
+	font-weight: 700;
+	border-bottom: none;
+	color: #007DC1;
+}
+#cv .display-none, #about .display-none {
+	display: none;
+}
+#cv h3 {
+	display: inline;
+	margin-left: 20px;
+	font-size: 20px;
+}
+#cv #education h4, #cv #experience h4, #cv #skills h4 {
+	font-size: 16px;
+	font-weight: 600;
+	text-align: left;
+}
+#cv #experience .col-sm-12, #cv #education .col-sm-12, #cv #skills .col-sm-12 {
+	padding-top: 60px;
+	text-align: left;
+}
+#cv .logo {
+	width: 150px;
+	height: auto;
+	display: inline;
+}
+#cv #skills ul {
+	list-style: none;
+	margin: 20px 0;
+	padding: 0;
+}
+#cv #skills li {
+	margin-bottom: 15px;
+	text-align: left;
+	border-bottom: 1px solid #E6E7E8;
+	padding-bottom: 10px;
+}
+#cv .star {
+	width: 20px;
+	height: auto;
+	display: inline;
+	float: right;
+	transition: 0.5s;
+}
+#cv .star:hover {
+	width: 25px;
+	content: url('../img/icons/star-filled.png');
+}
+#about .container-fluid:nth-child(3) .col-sm-6 {
+	padding: 50px 150px;
+	font-size: 12px;
+	height: 300px;
+	background: #171B1E;
+	color: #FFF;
+}
+#about .container-fluid:nth-child(3) h2 {
+	font-family: 'BenchNine', sans-serif;
+}
+#projects .container-fluid:nth-child(3) {
+	padding: 0;
+	margin: 0;
+}
+#projects .container-fluid:nth-child(3) .col-sm-4 {
+	background: red;
+	border: 1px solid #000;
+	height: 300px;
+	position: relative;
+}
+#projects #footer {
+	margin: 0;
+}
+#projects .container-fluid:nth-child(3) .col-sm-4:first-child {
+	background: url(../img/the-pointe-tv.jpg) no-repeat top left;
+	background-size: 100% 100%;
+}
+#projects .info {
+	color: #FFF;
+	position: absolute;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+/* ------- BODY END ------- */
+
+
+
+
+/* ------- FOOTER START ------- */
+#footer {
+	padding: 100px 0;
+	background: #171B1E;
+	color: #FFF;
+	font-family: 'BenchNine', sans-serif;
+	text-transform: uppercase;
+	font-size: 26px;
+	margin-top: 40px;
+	z-index: 0;
+}
+#about #footer {
+	margin-top: 0;
+}
+#footer img {
+	display: block;
+	width: 60px;
+	height: 60px;
+	margin: 10px auto;
+}
+#footer .col-sm-2 {
+	font-weight: 300;
+	text-align: center;
+}
+#footer .col-sm-4 {
+	font-weight: 400;
+	font-size: 20px;
+	color: #9E9E9E;
+}
+#footer a {
+	text-decoration: none;
+	color: #FFF;
+}
+#footer a:hover {
+	font-weight: 400;
+}
+#footer h2 {
+	font-weight: 700;
+	font-size: 32px;
+	padding: 0;
+	margin: 0;
+	color: #FFF;
+}
+/* ------- FOOTER END ------- */
+
+
+
+
+/* ------- POPUP MENU START ------- */
+#popup-menu {
+	display: none;
+	position: fixed;
+	top: 45px;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: #171B1E;
+	padding-top: 100px;
+	-webkit-animation: fadeIn 1s;
+	animation: fadeIn 1s;
+	z-index: 999;
+}
+.popup-container {
+	position: relative;
+	height: 100%;
+}
+.popup-inner-menu {
+	margin: auto;
+	width: 90%;
+	background: transparent;
+	padding: 25px;
+}
+.popup-inner-menu ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 100%;
+	overflow: auto;
+}
+.popup-inner-menu a {
+	color: #626262;
+	text-decoration: none;
+	font-family: 'Roboto Condensed', sans-serif;
+	font-weight: 300;
+	text-transform: uppercase;
+	font-size: 28px;
+	transition: 1s;
+}
+.popup-inner-menu a:hover {
+	color: #FFF;
+}
+.popup-inner-menu li {
+	margin-bottom: 50px;
+	text-align: center;
+}
+.popup-inner-menu img {
+	width: 40px;
+	height: 40px;
+	margin-right: 10px;
+	margin-top: 50px;
+}
+.popup-inner-menu h4 {
+	font-family: 'Nothing You Could Do', cursive;
+	color: #FFF;
+	font-size: 100px;
+	text-align: center;
+	margin: 0 0 40px 0;
+	padding: 0;
+}
+/* ------- POPUP MENU END ------- */

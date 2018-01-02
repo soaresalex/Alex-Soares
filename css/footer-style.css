@@ -1,0 +1,71 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/* ------- FOOTER START ------- */
+#footer {
+	padding: 100px 0;
+	background: #171B1E;
+	color: #FFF;
+	font-family: 'BenchNine', sans-serif;
+	text-transform: uppercase;
+	font-size: 26px;
+	margin-top: 40px;
+	z-index: 0;
+}
+#about #footer {
+	margin-top: 0;
+}
+#footer img {
+	display: block;
+	width: 60px;
+	height: 60px;
+	margin: 10px auto;
+}
+#footer .col-sm-2 {
+	font-weight: 300;
+	text-align: center;
+}
+#footer .col-sm-4 {
+	font-weight: 400;
+	font-size: 20px;
+	color: #9E9E9E;
+}
+#footer a {
+	text-decoration: none;
+	color: #FFF;
+}
+#footer a:hover {
+	font-weight: 400;
+}
+#footer h2 {
+	font-weight: 700;
+	font-size: 32px;
+	padding: 0;
+	margin: 0;
+	color: #FFF;
+}
+/* ------- FOOTER END ------- */
+
+@media only screen and (max-width: 800px) {
+	#footer {
+	padding: 100px 0;
+	background: #171B1E;
+	color: #FFF;
+	font-family: 'BenchNine', sans-serif;
+	text-transform: uppercase;
+	font-size: 20px;
+	z-index: -9999;
+}
+#footer img {
+	display: block;
+	width: 50px;
+	height: 50px;
+	margin: 10px auto;
+}
+#footer .col-sm-2 {
+	display: inline-flex;
+}
+#footer .col-sm-4 {
+	padding-bottom: 40px;
+}
+}
